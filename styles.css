@@ -1,0 +1,60 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.logo {
+    max-width: 200px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.form-check-label {
+    font-size: 14px;
+}
+
+.btn-primary {
+    background-color: #056816; 
+    border-color: #056816; 
+}
+
+/* Style form fields */
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    width: 150px; /* Adjust the width as needed */
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.form-group input,
+.form-group select {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1000px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(4, 106, 26, 0.1);
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+}

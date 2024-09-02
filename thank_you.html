@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            background-image: url('background-image.png'); /* Replace with your background image */
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+        }
+        .main-content {
+            max-width: 800px; /* Controls the width of the content */
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 10px;
+            position: relative; /* Ensure main content is positioned above side images */
+            z-index: 2;
+        }
+        .side-image {
+            position: fixed;
+            top: 0;
+            width: 150px; /* You can adjust the width of the side images */
+            height: 100%; /* Make sure the image covers the full height */
+            object-fit: cover; /* Ensure the image covers the entire space */
+            z-index: 1; /* Ensure the images are behind the content */
+        }
+        .left-side-image {
+            left: 0;
+        }
+        .right-side-image {
+            right: 0;
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            text-align: center;
+            vertical-align: top;
+        }
+        img {
+            width: 150px; /* Set a fixed width */
+            height: 150px; /* Set a fixed height */
+            object-fit: contain; /* Ensure the image scales correctly */
+        }
+        .caption {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Left side image -->
+    <img src="img/left-image.png" class="side-image left-side-image" alt="Left Side Image">
+
+    <!-- Right side image -->
+    <img src="img/right-image.png" class="side-image right-side-image" alt="Right Side Image">
+
+    <div class="main-content">
+        <div class="container text-center">
+            <h1 class="alert alert-danger text-center">
+                <i class="fas fa-exclamation-triangle" style="font-size: 100px;"></i>
+            </h1>
+            
+            <h1>You Have Been Phished!</h1>
+            <p class="lead">Be careful with suspicious links and messages.</p>
+            <h2 class="mb-4">Stay Safe Online: Beware of Phishing Attacks!</h2>
+
+            <!-- Visual Section: How Phishing Works -->
+            <h3 class="mb-4">How Phishing Works</h3>
+            <table>
+                <tr>
+                    <td>
+                        <img src="img/email.png" alt="Email Icon">
+                        <div class="caption">Emails</div>
+                        <p>Fake messages from trusted companies asking for your personal information.</p>
+                    </td>
+                    <td>
+                        <img src="img/text-message.png" alt="Text Message Icon">
+                        <div class="caption">Text Messages</div>
+                        <p>Urgent requests with suspicious links.</p>
+                    </td>
+                    <td>
+                        <img src="img/fake-website.png" alt="Fake Website Icon">
+                        <div class="caption">Fake Websites</div>
+                        <p>Imitation sites designed to steal your data.</p>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Visual Section: Common Phishing Scams -->
+            <h3 class="mb-4">Common Phishing Scams</h3>
+            <table>
+                <tr>
+                    <td>
+                        <img src="img/compromised.png" alt="Compromised Icon">
+                        <div class="caption">"Your account has been compromised"</div>
+                    </td>
+                    <td>
+                        <img src="img/prize.png" alt="Prize Icon">
+                        <div class="caption">"You've won a prize"</div>
+                    </td>
+                    <td>
+                        <img src="img/urgent.png" alt="Urgent Action Icon">
+                        <div class="caption">"Urgent action required"</div>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Visual Section: How to Recognize a Phishing Attack -->
+            <h3 class="mb-4">How to Recognize a Phishing Attack</h3>
+            <table>
+                <tr>
+                    <td>
+                        <img src="img/check-sender.png" alt="Check Sender Icon">
+                        <div class="caption">Check the Sender</div>
+                        <p>Verify the email address or phone number.</p>
+                    </td>
+                    <td>
+                        <img src="img/red-flags.png" alt="Red Flags Icon">
+                        <div class="caption">Look for Red Flags</div>
+                        <p>Poor grammar, urgent requests, or unfamiliar links.</p>
+                    </td>
+                    <td>
+                        <img src="img/no-click.png" alt="Don't Click Icon">
+                        <div class="caption">Don’t Click on Links</div>
+                        <p>Hover to see the actual URL.</p>
+                    </td>
+                    <td>
+                        <img src="img/no-attachments.png" alt="No Attachments Icon">
+                        <div class="caption">Be Skeptical of Attachments</div>
+                        <p>Especially if they seem unexpected.</p>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Visual Section: What to Do -->
+            <h3 class="mb-4">What to Do If You Receive a Phishing Message</h3>
+            <table>
+                <tr>
+                    <td>
+                        <img src="img/no-respond.png" alt="Do Not Respond Icon">
+                        <div class="caption">Do Not Respond</div>
+                        <p>Ignore the request and don’t click any links.</p>
+                    </td>
+                    <td>
+                        <img src="img/report.png" alt="Report Icon">
+                        <div class="caption">Report It</div>
+                        <p>Forward phishing emails to IT or the relevant authority.</p>
+                    </td>
+                    <td>
+                        <img src="img/delete.png" alt="Delete Icon">
+                        <div class="caption">Delete the Message</div>
+                        <p>Safely remove it from your inbox.</p>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Visual Section: Protect Yourself -->
+            <h3 class="mb-4">Protect Yourself</h3>
+            <table>
+                <tr>
+                    <td>
+                        <img src="img/2fa.png" alt="2FA Icon">
+                        <div class="caption">Enable Two-Factor Authentication (2FA)</div>
+                        <p>Add an extra layer of security.</p>
+                    </td>
+                    <td>
+                        <img src="img/passwords.png" alt="Passwords Icon">
+                        <div class="caption">Update Your Passwords Regularly</div>
+                        <p>Use strong, unique passwords.</p>
+                    </td>
+                    <td>
+                        <img src="img/software-update.png" alt="Software Update Icon">
+                        <div class="caption">Keep Your Software Updated</div>
+                        <p>Ensure your antivirus and browser are up-to-date.</p>
+                    </td>
+                    <td>
+                        <img src="img/be-cautious.png" alt="Be Cautious Icon">
+                        <div class="caption">Be Cautious</div>
+                        <p>If something feels off, it probably is.</p>
+                    </td>
+                </tr>
+            </table>
+
+            <h3 class="mb-4">Stay Informed</h3>
+            <p>Educate yourself and others about the latest phishing tactics. Awareness is your best defense against phishing attacks.</p>
+        </div>
+    </div>
+
+    <footer class="footer mt-5 py-3 bg-light">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <span class="text-muted">&copy; 2024 Phishing Awareness from Cybersecurity Division.</span>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-12">
+                    <span class="text-muted">All rights reserved.</span>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-12">
+                    <img src="img/logo.png" class="logo mb-4" alt="Logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
