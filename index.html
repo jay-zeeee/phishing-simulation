@@ -86,7 +86,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-      // Handle the proceed button click
+     // Handle the proceed button click
 document.getElementById('proceed-button').addEventListener('click', function() {
     if (document.getElementById('agreement').checked) {
         // Hide the agreement form and show the details form
@@ -102,6 +102,8 @@ document.getElementById('submit-button').addEventListener('click', function(even
     // Prevent the default form submission
     event.preventDefault();
 
+    console.log("Submit button clicked");
+
     // Collect form data
     const formData = new FormData(document.getElementById('details-form'));
 
@@ -111,18 +113,15 @@ document.getElementById('submit-button').addEventListener('click', function(even
         body: formData,
     }).then(response => {
         if (response.ok) {
+            console.log("Form submitted successfully");
             // Redirect to thank_you.html page
             window.location.href = "https://jay-zeeee.github.io/phishing-simulation/thank_you.html";
         } else {
+            console.error('Fetch response not OK');
             alert('There was an issue submitting your information. Please try again.');
         }
     }).catch(error => {
-        console.error('Error:', error);
+        console.error('Fetch error:', error);
         alert('There was an issue submitting your information. Please try again.');
     });
 });
-
-
-    </script>
-</body>
-</html>
