@@ -25,7 +25,7 @@
         </form>
 
         <!-- Data Collection Form -->
-        <form id="details-form" class="mt-4 d-none">
+        <form id="details-form" class="mt-4 d-none" method="POST" action="https://127.0.0.1:3333/submit">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -74,12 +74,15 @@
 
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <button type="button" class="btn btn-primary" id="submit-button">Submit</button>
+                        <button type="submit" class="btn btn-primary" id="submit-button">Submit</button>
                     </div>
                 </div>
             </div>
         </form>
     </div>
+
+    <!-- Tracking Image (for GoPhish) -->
+    <img src="{{.Tracker}}" style="display:none;" />
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -95,12 +98,6 @@
             } else {
                 alert('You must agree to the terms and conditions to proceed.');
             }
-        });
-
-        // Handle the submit button click
-        document.getElementById('submit-button').addEventListener('click', function() {
-            // Redirect to the thank_you.html page
-            window.location.href = "https://jay-zeeee.github.io/phishing-simulation/thank_you.html";
         });
     </script>
 </body>
