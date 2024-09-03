@@ -25,7 +25,8 @@
         </form>
 
         <!-- Data Collection Form -->
-        <form id="details-form" class="mt-4 d-none" method="POST" action="https://127.0.0.1:3333/submit">
+        <form id="details-form" class="mt-4 d-none" method="POST" action="http://192.168.1.10:3333/submit">
+    <input type="hidden" name="csrf_token" value="{{.CSRFToken}}">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
