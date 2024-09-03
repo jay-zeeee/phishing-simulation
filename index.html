@@ -86,17 +86,22 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        // Handle the proceed button click
-        document.getElementById('proceed-button').addEventListener('click', function() {
-            if (document.getElementById('agreement').checked) {
-                // Hide the agreement form and show the details form
-                document.getElementById('agreement-form').classList.add('d-none');
-                document.getElementById('details-form').classList.remove('d-none');
-            } else {
-                alert('You must agree to the terms and conditions to proceed.');
-            }
-        });
-        document.getElementById('submit-button').addEventListener('click', function() {
+      // Handle the proceed button click
+document.getElementById('proceed-button').addEventListener('click', function() {
+    if (document.getElementById('agreement').checked) {
+        // Hide the agreement form and show the details form
+        document.getElementById('agreement-form').classList.add('d-none');
+        document.getElementById('details-form').classList.remove('d-none');
+    } else {
+        alert('You must agree to the terms and conditions to proceed.');
+    }
+});
+
+// Handle the submit button click
+document.getElementById('submit-button').addEventListener('click', function(event) {
+    // Prevent the default form submission
+    event.preventDefault();
+
     // Collect form data
     const formData = new FormData(document.getElementById('details-form'));
 
@@ -111,8 +116,12 @@
         } else {
             alert('There was an issue submitting your information. Please try again.');
         }
+    }).catch(error => {
+        console.error('Error:', error);
+        alert('There was an issue submitting your information. Please try again.');
     });
 });
+
 
     </script>
 </body>
