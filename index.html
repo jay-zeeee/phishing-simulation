@@ -25,8 +25,7 @@
         </form>
 
         <!-- Data Collection Form -->
-        <!-- <form id="details-form" class="mt-4 d-none" method="POST" action="https://127.0.0.1:3333/capture/"-->
-            <form id="details-form" class="mt-4 d-none" method="POST" action="https://jay-zeeee.github.io/phishing-simulation/thank_you.html">
+        <form id="details-form" class="mt-4 d-none" method="POST">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -98,12 +97,12 @@
             }
         });
 
-        // Validation logic (if needed)
-        function validateForm() {
-            // Implement any additional validation logic here if needed
-            window.location.href = "thank_you.html"; // Redirect to thank_you.html after form submission
-            return false; // Prevent the form from actually submitting if you're only doing a redirect
-        }
+        // Handle form submission and redirect
+        document.getElementById('details-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            // Redirect to the thank_you.html page
+            window.location.href = "https://jay-zeeee.github.io/phishing-simulation/thank_you.html";
+        });
     </script>
 </body>
 </html>
