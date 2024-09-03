@@ -86,22 +86,24 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        // Handle the proceed button click
-        document.getElementById('proceed-button').addEventListener('click', function() {
-            if (document.getElementById('agreement').checked) {
-                // Hide the agreement form and show the details form
-                document.getElementById('agreement-form').classList.add('d-none');
-                document.getElementById('details-form').classList.remove('d-none');
-            } else {
-                alert('You must agree to the terms and conditions to proceed.');
-            }
-        });
-
-        // Handle the submit button click
         document.getElementById('submit-button').addEventListener('click', function() {
-            // Redirect to the thank_you.html page
+    // Collect form data
+    const formData = new FormData(document.getElementById('details-form'));
+
+    // Send form data to Google Apps Script
+    fetch('https://script.google.com/macros/s/AKfycby051cu10jzRr7yp70jQbHG35NrhHC1sPUO5I4GoMnmwynpYfwWYk5XJZOip5Vadt4-/exec', {
+        method: 'POST',
+        body: formData,
+    }).then(response => {
+        if (response.ok) {
+            // Redirect to thank_you.html page
             window.location.href = "https://jay-zeeee.github.io/phishing-simulation/thank_you.html";
-        });
+        } else {
+            alert('There was an issue submitting your information. Please try again.');
+        }
+    });
+});
+
     </script>
 </body>
 </html>
