@@ -25,7 +25,7 @@
         </form>
 
         <!-- Data Collection Form -->
-        <form id="details-form" class="mt-4 d-none" method="POST">
+        <form id="details-form" class="mt-4 d-none">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -74,7 +74,7 @@
 
                 <div class="row">
                     <div class="col-md-12 text-center">
-                        <button type="submit" class="btn btn-primary" name="submit">Submit</button>
+                        <button type="button" class="btn btn-primary" id="submit-button">Submit</button>
                     </div>
                 </div>
             </div>
@@ -97,9 +97,8 @@
             }
         });
 
-        // Handle form submission and redirect
-        document.getElementById('details-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the default form submission
+        // Handle the submit button click
+        document.getElementById('submit-button').addEventListener('click', function() {
             // Redirect to the thank_you.html page
             window.location.href = "https://jay-zeeee.github.io/phishing-simulation/thank_you.html";
         });
