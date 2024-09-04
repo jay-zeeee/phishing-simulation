@@ -7,7 +7,7 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Hide the details form initially */
+        /* Initially hide the details form */
         #details-form {
             display: none;
         }
@@ -96,11 +96,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        // Handle the proceed button click
         document.getElementById('proceed-button').addEventListener('click', function() {
             if (document.getElementById('agreement').checked) {
                 // Hide the agreement form and show the details form
-                document.getElementById('agreement-form').classList.add('d-none');
+                document.getElementById('agreement-form').style.display = 'none';
                 document.getElementById('details-form').style.display = 'block';
             } else {
                 alert('You must agree to the terms and conditions to proceed.');
