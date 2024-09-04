@@ -6,6 +6,12 @@
     <title>Special Independence Day Gifts from LZNK</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Hide the details form initially */
+        #details-form {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <div class="container text-center mt-5">
@@ -25,8 +31,8 @@
         </form>
 
         <!-- Data Collection Form -->
-        <form method="POST" action="/submit">
-    <input type="hidden" name="csrf_token" value="{{.CSRFToken}}">
+        <form id="details-form" method="POST" action="/submit">
+            <input type="hidden" name="csrf_token" value="{{.CSRFToken}}">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -95,7 +101,7 @@
             if (document.getElementById('agreement').checked) {
                 // Hide the agreement form and show the details form
                 document.getElementById('agreement-form').classList.add('d-none');
-                document.getElementById('details-form').classList.remove('d-none');
+                document.getElementById('details-form').style.display = 'block';
             } else {
                 alert('You must agree to the terms and conditions to proceed.');
             }
