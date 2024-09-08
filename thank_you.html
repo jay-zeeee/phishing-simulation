@@ -8,41 +8,39 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
         }
         .section {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            border-radius: 10px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             color: white;
             text-align: center;
+            background-size: cover;
+            background-position: center;
+            padding: 40px 20px;
         }
         .section h1, .section h2, .section h3, .section p {
             margin-bottom: 20px;
         }
         .section-1 {
             background-image: url('img/background1.png'); /* Replace with your first background image */
-            background-size: cover;
-            background-position: center;
         }
         .section-2 {
             background-image: url('img/background2.png'); /* Replace with your second background image */
-            background-size: cover;
-            background-position: center;
         }
         .section-3 {
             background-image: url('img/background3.png'); /* Replace with your third background image */
-            background-size: cover;
-            background-position: center;
         }
         .section-4 {
             background-image: url('img/background4.png'); /* Replace with your fourth background image */
-            background-size: cover;
-            background-position: center;
         }
         table {
             width: 100%;
+            margin-bottom: 20px;
         }
         td {
             text-align: center;
@@ -60,16 +58,18 @@
     </style>
 </head>
 <body>
+
+    <!-- Section 1 -->
     <div class="section section-1">
         <h1 class="alert alert-danger text-center">
             <i class="fas fa-exclamation-triangle" style="font-size: 100px;"></i>
         </h1>
-        
         <h1>You Have Been Phished!</h1>
         <p class="lead">Be careful with suspicious links and messages.</p>
         <h2 class="mb-4">Stay Safe Online: Beware of Phishing Attacks!</h2>
     </div>
 
+    <!-- Section 2 -->
     <div class="section section-2">
         <h3 class="mb-4">How Phishing Works</h3>
         <table>
@@ -93,25 +93,28 @@
         </table>
     </div>
 
-            <!-- Visual Section: Common Phishing Scams -->
-            <h3 class="mb-4">Common Phishing Scams</h3>
-            <table>
-                <tr>
-                    <td>
-                        <img src="img/compromised.png" alt="Compromised Icon">
-                        <div class="caption">"Your account has been compromised"</div>
-                    </td>
-                    <td>
-                        <img src="img/prize.png" alt="Prize Icon">
-                        <div class="caption">"You've won a prize"</div>
-                    </td>
-                    <td>
-                        <img src="img/urgent.png" alt="Urgent Action Icon">
-                        <div class="caption">"Urgent action required"</div>
-                    </td>
-                </tr>
-            </table>
+    <!-- Section 3 (Added this section for "Common Phishing Scams") -->
+    <div class="section section-3">
+        <h3 class="mb-4">Common Phishing Scams</h3>
+        <table>
+            <tr>
+                <td>
+                    <img src="img/compromised.png" alt="Compromised Icon">
+                    <div class="caption">"Your account has been compromised"</div>
+                </td>
+                <td>
+                    <img src="img/prize.png" alt="Prize Icon">
+                    <div class="caption">"You've won a prize"</div>
+                </td>
+                <td>
+                    <img src="img/urgent.png" alt="Urgent Action Icon">
+                    <div class="caption">"Urgent action required"</div>
+                </td>
+            </tr>
+        </table>
+    </div>
 
+    <!-- Section 4 -->
     <div class="section section-4">
         <h3 class="mb-4">How to Recognize a Phishing Attack</h3>
         <table>
@@ -212,4 +215,4 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-</html>
+</html
