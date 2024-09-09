@@ -36,22 +36,45 @@
             background-blend-mode: overlay;
         }
 
-        .section-2, .section-3, .section-4 {
-            padding-top: 50px;
-            padding-bottom: 50px;
-        }
-
-        /* Section-Specific Styles */
         .section-2 {
-            background-color: #34495e;
+            background-image: url('img/background2.png');
+            background-color: rgba(0, 0, 0, 0.6);
+            background-blend-mode: overlay;
         }
 
         .section-3 {
-            background-color: #2c3e50;
+            background-image: url('img/background3.png');
+            background-color: rgba(0, 0, 0, 0.6);
+            background-blend-mode: overlay;
         }
 
         .section-4 {
-            background-color: #1abc9c;
+            background-image: url('img/background4.png');
+            background-color: rgba(0, 0, 0, 0.6);
+            background-blend-mode: overlay;
+        }
+
+        /* Align items and icons to the center */
+        .card img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .card .caption {
+            font-weight: bold;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .card p {
+            text-align: center;
+        }
+
+        /* Section-Specific Styles */
+        .section-2, .section-3, .section-4 {
+            padding-top: 50px;
+            padding-bottom: 50px;
         }
 
         table {
@@ -69,11 +92,6 @@
             object-fit: contain;
             border-radius: 50%;
             margin-bottom: 10px;
-        }
-
-        .caption {
-            font-weight: bold;
-            margin-top: 10px;
         }
 
         .card {
@@ -213,24 +231,29 @@
                     <div class="card">
                         <img src="img/report.png" alt="Ikon Lapor">
                         <div class="caption">Lapor</div>
-                        <p>Hantar e-mel phishing kepada pihak IT atau pihak berkuasa yang relevan.</p>
+                        <p>Laporkan mesej kepada pihak yang berkuasa atau syarikat yang sah.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card">
                         <img src="img/delete.png" alt="Ikon Padam">
-                        <div class="caption">Padam Mesej</div>
-                        <p>Buang mesej itu dengan selamat dari peti masuk anda.</p>
+                        <div class="caption">Padam</div>
+                        <p>Padam mesej tersebut daripada peti masuk anda.</p>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <h3 class="mt-5 mb-4">Lindungi Diri Anda</h3>
+    <!-- Section 5: Stay Safe -->
+    <div class="section section-5">
+        <div class="container">
+            <h3 class="mb-4">Petua Untuk Kekal Selamat</h3>
             <div class="row">
                 <div class="col-md-3">
                     <div class="card">
-                        <img src="img/2fa.png" alt="Ikon 2FA">
-                        <div class="caption">Dayakan Pengesahan Dua Faktor (2FA)</div>
+                        <img src="img/2fa.png" alt="Ikon Pengesahan Dua Faktor">
+                        <div class="caption">Aktifkan Pengesahan Dua Faktor (2FA)</div>
                         <p>Tambahkan lapisan keselamatan tambahan.</p>
                     </div>
                 </div>
