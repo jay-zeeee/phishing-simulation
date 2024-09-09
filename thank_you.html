@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ms">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kesedaran Phishing</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
         }
+
         .section {
             min-height: 100vh;
             display: flex;
@@ -21,185 +23,253 @@
             text-align: center;
             background-size: cover;
             background-position: center;
-            padding: 40px 20px;
+            padding: 60px 20px;
         }
+
         .section h1, .section h2, .section h3, .section p {
             margin-bottom: 20px;
         }
+
         .section-1 {
-            background-image: url('img/background1.png'); /* Replace with your first background image */
+            background-image: url('img/background1.png');
+            background-color: rgba(0, 0, 0, 0.6);
+            background-blend-mode: overlay;
         }
+
+        .section-2, .section-3, .section-4 {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        /* Section-Specific Styles */
         .section-2 {
-            background-image: url('img/background2.png'); /* Replace with your second background image */
+            background-color: #34495e;
         }
+
         .section-3 {
-            background-image: url('img/background3.png'); /* Replace with your third background image */
+            background-color: #2c3e50;
         }
+
         .section-4 {
-            background-image: url('img/background4.png'); /* Replace with your fourth background image */
+            background-color: #1abc9c;
         }
+
         table {
             width: 100%;
-            margin-bottom: 20px;
         }
+
         td {
             text-align: center;
-            vertical-align: top;
+            padding: 20px;
         }
+
         img {
-            width: 150px;
-            height: 150px;
+            width: 100px;
+            height: 100px;
             object-fit: contain;
+            border-radius: 50%;
+            margin-bottom: 10px;
         }
+
         .caption {
             font-weight: bold;
             margin-top: 10px;
+        }
+
+        .card {
+            background-color: #fff;
+            color: #000;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        footer {
+            background-color: #f8f9fa;
+            padding: 40px 0;
+        }
+
+        footer .logo {
+            width: 80px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Section 1 -->
+    <!-- Section 1: Alert -->
     <div class="section section-1">
         <h1 class="alert alert-danger text-center">
             <i class="fas fa-exclamation-triangle" style="font-size: 100px;"></i>
         </h1>
-        <h1>You Have Been Phished!</h1>
+        <h1>Anda Telah Menjadi Mangsa Phishing!</h1>
         <p class="lead">Berhati-hati dengan pautan dan mesej yang mencurigakan.</p>
- <h2 class="mb-4">Kekal Selamat Dalam Talian: Berwaspada dengan Serangan Phishing!</h2>
+        <h2 class="mb-4">Kekal Selamat Dalam Talian: Berwaspada dengan Serangan Phishing!</h2>
     </div>
 
-  <!-- Section 2 -->
+    <!-- Section 2: How Phishing Works -->
     <div class="section section-2">
-        <h3 class="mb-4">Bagaimana Phishing Berfungsi</h3>
-        <table>
-            <tr>
-                <td>
-                    <img src="img/email.png" alt="Ikon E-mel">
-                    <div class="caption">E-mel</div>
-                    <p>Mesej palsu daripada syarikat yang dipercayai meminta maklumat peribadi anda.</p>
-                </td>
-                <td>
-                    <img src="img/text-message.png" alt="Ikon Mesej Teks">
-                    <div class="caption">Mesej Teks</div>
-                    <p>Permintaan mendesak dengan pautan yang mencurigakan.</p>
-                </td>
-                <td>
-                    <img src="img/fake-website.png" alt="Ikon Laman Web Palsu">
-                    <div class="caption">Laman Web Palsu</div>
-                    <p>Laman web tiruan yang direka untuk mencuri data anda.</p>
-                </td>
-            </tr>
-        </table>
+        <div class="container">
+            <h3 class="mb-4">Cara Phishing Berfungsi</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/email.png" alt="Ikon E-mel">
+                        <div class="caption">E-mel</div>
+                        <p>Mesej palsu daripada syarikat dipercayai yang meminta maklumat peribadi anda.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/text-message.png" alt="Ikon Mesej Teks">
+                        <div class="caption">Mesej Teks</div>
+                        <p>Permintaan segera dengan pautan yang mencurigakan.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/fake-website.png" alt="Ikon Laman Web Palsu">
+                        <div class="caption">Laman Web Palsu</div>
+                        <p>Tapak tiruan yang direka untuk mencuri data anda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- Section 3 -->
+    <!-- Section 3: Common Phishing Scams -->
     <div class="section section-3">
-        <h3 class="mb-4">Penipuan Phishing Biasa</h3>
-        <table>
-            <tr>
-                <td>
-                    <img src="img/compromised.png" alt="Ikon Akaun Dikompromi">
-                    <div class="caption">"Akaun anda telah dikompromi"</div>
-                </td>
-                <td>
-                    <img src="img/prize.png" alt="Ikon Hadiah">
-                    <div class="caption">"Anda telah memenangi hadiah"</div>
-                </td>
-                <td>
-                    <img src="img/urgent.png" alt="Ikon Tindakan Segera">
-                    <div class="caption">"Tindakan segera diperlukan"</div>
-                </td>
-            </tr>
-        </table>
+        <div class="container">
+            <h3 class="mb-4">Penipuan Phishing Biasa</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/compromised.png" alt="Ikon Kompromi">
+                        <div class="caption">"Akaun anda telah dikompromi"</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/prize.png" alt="Ikon Hadiah">
+                        <div class="caption">"Anda telah memenangi hadiah"</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/urgent.png" alt="Ikon Tindakan Segera">
+                        <div class="caption">"Tindakan segera diperlukan"</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <!-- Section 4 -->
+    <!-- Section 4: How to Recognize Phishing -->
     <div class="section section-4">
-        <h3 class="mb-4">Cara Mengenal Serangan Phishing</h3>
-        <table>
-            <tr>
-                <td>
-                    <img src="img/check-sender.png" alt="Ikon Semak Pengirim">
-                    <div class="caption">Semak Pengirim</div>
-                    <p>Periksa alamat e-mel atau nombor telefon.</p>
-                </td>
-                <td>
-                    <img src="img/red-flags.png" alt="Ikon Amaran Merah">
-                    <div class="caption">Cari Tanda Amaran</div>
-                    <p>Tatabahasa yang lemah, permintaan mendesak, atau pautan yang tidak dikenali.</p>
-                </td>
-                <td>
-                    <img src="img/no-click.png" alt="Ikon Jangan Klik Pautan">
-                    <div class="caption">Jangan Klik Pautan</div>
-                    <p>Arahkan tetikus untuk melihat URL sebenar.</p>
-                </td>
-                <td>
-                    <img src="img/no-attachments.png" alt="Ikon Jangan Buka Lampiran">
-                    <div class="caption">Berhati-hati dengan Lampiran</div>
-                    <p>Terutama jika mereka kelihatan tidak dijangka.</p>
-                </td>
-            </tr>
-        </table>
+        <div class="container">
+            <h3 class="mb-4">Cara Mengenali Serangan Phishing</h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="img/check-sender.png" alt="Ikon Periksa Pengirim">
+                        <div class="caption">Periksa Pengirim</div>
+                        <p>Sahkan alamat e-mel atau nombor telefon.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="img/red-flags.png" alt="Ikon Tanda Amaran">
+                        <div class="caption">Cari Tanda Amaran</div>
+                        <p>Tatabahasa yang lemah, permintaan segera, atau pautan yang tidak dikenali.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="img/no-click.png" alt="Ikon Jangan Klik">
+                        <div class="caption">Jangan Klik Pautan</div>
+                        <p>Arahkan tetikus ke pautan untuk melihat URL sebenar.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="img/no-attachments.png" alt="Ikon Jangan Buka Lampiran">
+                        <div class="caption">Berhati-hati dengan Lampiran</div>
+                        <p>Terutama jika ia kelihatan tidak dijangka.</p>
+                    </div>
+                </div>
+            </div>
 
-        <h3 class="mb-4">Apa yang Perlu Dilakukan Jika Anda Menerima Mesej Phishing</h3>
-        <table>
-            <tr>
-                <td>
-                    <img src="img/no-respond.png" alt="Ikon Jangan Balas">
-                    <div class="caption">Jangan Balas</div>
-                    <p>Abaikan permintaan dan jangan klik sebarang pautan.</p>
-                </td>
-                <td>
-                    <img src="img/report.png" alt="Ikon Lapor">
-                    <div class="caption">Lapor</div>
-                    <p>Teruskan e-mel phishing kepada IT atau pihak berkuasa yang relevan.</p>
-                </td>
-                <td>
-                    <img src="img/delete.png" alt="Ikon Padam Mesej">
-                    <div class="caption">Padam Mesej</div>
-                    <p>Buang dengan selamat daripada peti masuk anda.</p>
-                </td>
-            </tr>
-        </table>
+            <h3 class="mt-5 mb-4">Apa yang Perlu Dilakukan Jika Anda Menerima Mesej Phishing</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/no-respond.png" alt="Ikon Jangan Balas">
+                        <div class="caption">Jangan Balas</div>
+                        <p>Abaikan permintaan dan jangan klik sebarang pautan.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/report.png" alt="Ikon Lapor">
+                        <div class="caption">Lapor</div>
+                        <p>Hantar e-mel phishing kepada pihak IT atau pihak berkuasa yang relevan.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/delete.png" alt="Ikon Padam">
+                        <div class="caption">Padam Mesej</div>
+                        <p>Buang mesej itu dengan selamat dari peti masuk anda.</p>
+                    </div>
+                </div>
+            </div>
 
-        <h3 class="mb-4">Lindungi Diri Anda</h3>
-        <table>
-            <tr>
-                <td>
-                    <img src="img/2fa.png" alt="Ikon 2FA">
-                    <div class="caption">Aktifkan Pengesahan Dua Faktor (2FA)</div>
-                    <p>Tambah lapisan keselamatan tambahan.</p>
-                </td>
-                <td>
-                    <img src="img/passwords.png" alt="Ikon Kata Laluan">
-                    <div class="caption">Kemas kini Kata Laluan Anda Secara Berkala</div>
-                    <p>Gunakan kata laluan yang kukuh dan unik.</p>
-                </td>
-                <td>
-                    <img src="img/software-update.png" alt="Ikon Kemas Kini Perisian">
-                    <div class="caption">Kemas Kini Perisian Anda</div>
-                    <p>Pastikan antivirus dan pelayar anda dikemas kini.</p>
-                </td>
-                <td>
-                    <img src="img/be-cautious.png" alt="Ikon Berhati-hati">
-                    <div class="caption">Berhati-hati</div>
-                    <p>Jika sesuatu kelihatan tidak betul, ia mungkin benar.</p>
-                </td>
-            </tr>
-        </table>
+            <h3 class="mt-5 mb-4">Lindungi Diri Anda</h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="img/2fa.png" alt="Ikon 2FA">
+                        <div class="caption">Dayakan Pengesahan Dua Faktor (2FA)</div>
+                        <p>Tambahkan lapisan keselamatan tambahan.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="img/passwords.png" alt="Ikon Kata Laluan">
+                        <div class="caption">Kemas Kini Kata Laluan Anda Secara Berkala</div>
+                        <p>Gunakan kata laluan yang kuat dan unik.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="img/software-update.png" alt="Ikon Kemas Kini Perisian">
+                        <div class="caption">Kekalkan Perisian Anda</div>
+                        <p>Pastikan antivirus dan pelayar anda dikemas kini.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="img/be-cautious.png" alt="Ikon Berhati-hati">
+                        <div class="caption">Berhati-hati</div>
+                        <p>Jika sesuatu kelihatan tidak betul, mungkin ia adalah penipuan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <footer class="footer mt-5 py-3 bg-light">
+    <!-- Footer -->
+    <footer class="footer mt-5 py-3">
         <div class="container text-center">
             <div class="row">
                 <div class="col-12">
-                    <span class="text-muted">&copy; 2024 Phishing Awareness from Cybersecurity Division.</span>
+                    <span class="text-muted">&copy; 2024 Kesedaran Phishing daripada Bahagian Keselamatan Siber.</span>
                 </div>
             </div>
             <div class="row mt-2">
                 <div class="col-12">
-                    <span class="text-muted">All rights reserved.</span>
+                    <span class="text-muted">Hak cipta terpelihara.</span>
                 </div>
             </div>
             <div class="row mt-2">
@@ -215,4 +285,4 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-</html
+</html>
