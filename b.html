@@ -1,154 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+            padding: 40px 20px;
+        }
+        .section h1, .section h2, .section h3, .section p {
+            margin-bottom: 20px;
+        }
+        .section-1 {
+            background-image: url('img/background1.png'); /* Replace with your first background image */
+        }
+        .section-2 {
+            background-image: url('img/background2.png'); /* Replace with your second background image */
+        }
+        .section-3 {
+            background-image: url('img/background3.png'); /* Replace with your third background image */
+        }
+        .section-4 {
+            background-image: url('img/background4.png'); /* Replace with your fourth background image */
+        }
+        table {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        td {
+            text-align: center;
+            vertical-align: top;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            object-fit: contain;
+        }
+        .caption {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container text-center mt-5">
-    
+
+    <!-- Section 1 -->
+    <div class="section section-1">
         <h1 class="alert alert-danger text-center">
             <i class="fas fa-exclamation-triangle" style="font-size: 100px;"></i>
         </h1>
-        
-        
         <h1>You Have Been Phished!</h1>
-        <p class="lead">Be careful with suspicious links and messages.</p>
+        <p class="lead">Berhati-hati dengan pautan dan mesej yang mencurigakan.</p>
+ <h2 class="mb-4">Kekal Selamat Dalam Talian: Berwaspada dengan Serangan Phishing!</h2>
+    </div>
 
-        <h2 class="mb-4">Stay Safe Online: Beware of Phishing Attacks!</h2>
+    <!-- Section 2 -->
+    <div class="section section-2">
+        <h3 class="mb-4">How Phishing Works</h3>
+        <table>
+            <tr>
+                <td>
+                    <img src="img/email.png" alt="Email Icon">
+                    <div class="caption">Emails</div>
+                    <p>Fake messages from trusted companies asking for your personal information.</p>
+                </td>
+                <td>
+                    <img src="img/text-message.png" alt="Text Message Icon">
+                    <div class="caption">Text Messages</div>
+                    <p>Urgent requests with suspicious links.</p>
+                </td>
+                <td>
+                    <img src="img/fake-website.png" alt="Fake Website Icon">
+                    <div class="caption">Fake Websites</div>
+                    <p>Imitation sites designed to steal your data.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
 
-        <!-- Visual Section: How Phishing Works -->
-        <div class="row mb-5">
-            <div class="col-md-4">
-                <img src="img/email.png" alt="Email Icon" class="img-fluid mb-3">
-                <h4>Emails</h4>
-                <p>Fake messages from trusted companies asking for your personal information.</p>
-            </div>
-            <div class="col-md-4">
-                <img src="img/text-message.png" alt="Text Message Icon" class="img-fluid mb-3">
-                <h4>Text Messages</h4>
-                <p>Urgent requests with suspicious links.</p>
-            </div>
-            <div class="col-md-4">
-                <img src="img/fake-website.png" alt="Fake Website Icon" class="img-fluid mb-3">
-                <h4>Fake Websites</h4>
-                <p>Imitation sites designed to steal your data.</p>
-            </div>
-        </div>
-
-        <!-- Visual Section: Common Phishing Scams -->
+    <!-- Section 3 (Added this section for "Common Phishing Scams") -->
+    <div class="section section-3">
         <h3 class="mb-4">Common Phishing Scams</h3>
-        <div class="row mb-5">
-            <div class="col-md-4">
-                <img src="img/compromised.png" alt="Compromised Icon" class="img-fluid mb-3">
-                <h5>"Your account has been compromised"</h5>
-            </div>
-            <div class="col-md-4">
-                <img src="img/prize.png" alt="Prize Icon" class="img-fluid mb-3">
-                <h5>"You've won a prize"</h5>
-            </div>
-            <div class="col-md-4">
-                <img src="img/urgent.png" alt="Urgent Action Icon" class="img-fluid mb-3">
-                <h5>"Urgent action required"</h5>
-            </div>
-        </div>
+        <table>
+            <tr>
+                <td>
+                    <img src="img/compromised.png" alt="Compromised Icon">
+                    <div class="caption">"Your account has been compromised"</div>
+                </td>
+                <td>
+                    <img src="img/prize.png" alt="Prize Icon">
+                    <div class="caption">"You've won a prize"</div>
+                </td>
+                <td>
+                    <img src="img/urgent.png" alt="Urgent Action Icon">
+                    <div class="caption">"Urgent action required"</div>
+                </td>
+            </tr>
+        </table>
+    </div>
 
-        <!-- Visual Section: How to Recognize a Phishing Attack -->
+    <!-- Section 4 -->
+    <div class="section section-4">
         <h3 class="mb-4">How to Recognize a Phishing Attack</h3>
-        <div class="row mb-5">
-            <div class="col-md-3">
-                <img src="img/check-sender.png" alt="Check Sender Icon" class="img-fluid mb-3">
-                <h5>Check the Sender</h5>
-                <p>Verify the email address or phone number.</p>
-            </div>
-            <div class="col-md-3">
-                <img src="img/red-flags.png" alt="Red Flags Icon" class="img-fluid mb-3">
-                <h5>Look for Red Flags</h5>
-                <p>Poor grammar, urgent requests, or unfamiliar links.</p>
-            </div>
-            <div class="col-md-3">
-                <img src="img/no-click.png" alt="Don't Click Icon" class="img-fluid mb-3">
-                <h5>Don’t Click on Links</h5>
-                <p>Hover to see the actual URL.</p>
-            </div>
-            <div class="col-md-3">
-                <img src="img/no-attachments.png" alt="No Attachments Icon" class="img-fluid mb-3">
-                <h5>Be Skeptical of Attachments</h5>
-                <p>Especially if they seem unexpected.</p>
-            </div>
-        </div>
+        <table>
+            <tr>
+                <td>
+                    <img src="img/check-sender.png" alt="Check Sender Icon">
+                    <div class="caption">Check the Sender</div>
+                    <p>Verify the email address or phone number.</p>
+                </td>
+                <td>
+                    <img src="img/red-flags.png" alt="Red Flags Icon">
+                    <div class="caption">Look for Red Flags</div>
+                    <p>Poor grammar, urgent requests, or unfamiliar links.</p>
+                </td>
+                <td>
+                    <img src="img/no-click.png" alt="Don't Click Icon">
+                    <div class="caption">Don’t Click on Links</div>
+                    <p>Hover to see the actual URL.</p>
+                </td>
+                <td>
+                    <img src="img/no-attachments.png" alt="No Attachments Icon">
+                    <div class="caption">Be Skeptical of Attachments</div>
+                    <p>Especially if they seem unexpected.</p>
+                </td>
+            </tr>
+        </table>
 
-        <!-- Visual Section: What to Do -->
         <h3 class="mb-4">What to Do If You Receive a Phishing Message</h3>
-        <div class="row mb-5">
-            <div class="col-md-4">
-                <img src="img/no-respond.png" alt="Do Not Respond Icon" class="img-fluid mb-3">
-                <h5>Do Not Respond</h5>
-                <p>Ignore the request and don’t click any links.</p>
-            </div>
-            <div class="col-md-4">
-                <img src="img/report.png" alt="Report Icon" class="img-fluid mb-3">
-                <h5>Report It</h5>
-                <p>Forward phishing emails to IT or the relevant authority.</p>
-            </div>
-            <div class="col-md-4">
-                <img src="img/delete.png" alt="Delete Icon" class="img-fluid mb-3">
-                <h5>Delete the Message</h5>
-                <p>Safely remove it from your inbox.</p>
-            </div>
-        </div>
+        <table>
+            <tr>
+                <td>
+                    <img src="img/no-respond.png" alt="Do Not Respond Icon">
+                    <div class="caption">Do Not Respond</div>
+                    <p>Ignore the request and don’t click any links.</p>
+                </td>
+                <td>
+                    <img src="img/report.png" alt="Report Icon">
+                    <div class="caption">Report It</div>
+                    <p>Forward phishing emails to IT or the relevant authority.</p>
+                </td>
+                <td>
+                    <img src="img/delete.png" alt="Delete Icon">
+                    <div class="caption">Delete the Message</div>
+                    <p>Safely remove it from your inbox.</p>
+                </td>
+            </tr>
+        </table>
 
-        <!-- Visual Section: Protect Yourself -->
         <h3 class="mb-4">Protect Yourself</h3>
-        <div class="row mb-5">
-            <div class="col-md-3">
-                <img src="img/2fa.png" alt="2FA Icon" class="img-fluid mb-3">
-                <h5>Enable Two-Factor Authentication (2FA)</h5>
-                <p>Add an extra layer of security.</p>
-            </div>
-            <div class="col-md-3">
-                <img src="img/passwords.png" alt="Passwords Icon" class="img-fluid mb-3">
-                <h5>Update Your Passwords Regularly</h5>
-                <p>Use strong, unique passwords.</p>
-            </div>
-            <div class="col-md-3">
-                <img src="img/software-update.png" alt="Software Update Icon" class="img-fluid mb-3">
-                <h5>Keep Your Software Updated</h5>
-                <p>Ensure your antivirus and browser are up-to-date.</p>
-            </div>
-            <div class="col-md-3">
-                <img src="img/be-cautious.png" alt="Be Cautious Icon" class="img-fluid mb-3">
-                <h5>Be Cautious</h5>
-                <p>If something feels off, it probably is.</p>
-            </div>
-        </div>
-
-      
-        <h3 class="mb-4">Stay Informed</h3>
-        <p>Educate yourself and others about the latest phishing tactics. Awareness is your best defense against phishing attacks.</p>
+        <table>
+            <tr>
+                <td>
+                    <img src="img/2fa.png" alt="2FA Icon">
+                    <div class="caption">Enable Two-Factor Authentication (2FA)</div>
+                    <p>Add an extra layer of security.</p>
+                </td>
+                <td>
+                    <img src="img/passwords.png" alt="Passwords Icon">
+                    <div class="caption">Update Your Passwords Regularly</div>
+                    <p>Use strong, unique passwords.</p>
+                </td>
+                <td>
+                    <img src="img/software-update.png" alt="Software Update Icon">
+                    <div class="caption">Keep Your Software Updated</div>
+                    <p>Ensure your antivirus and browser are up-to-date.</p>
+                </td>
+                <td>
+                    <img src="img/be-cautious.png" alt="Be Cautious Icon">
+                    <div class="caption">Be Cautious</div>
+                    <p>If something feels off, it probably is.</p>
+                </td>
+            </tr>
+        </table>
     </div>
 
     <footer class="footer mt-5 py-3 bg-light">
         <div class="container text-center">
-        
             <div class="row">
                 <div class="col-12">
                     <span class="text-muted">&copy; 2024 Phishing Awareness from Cybersecurity Division.</span>
                 </div>
             </div>
-    
-        
             <div class="row mt-2">
                 <div class="col-12">
                     <span class="text-muted">All rights reserved.</span>
                 </div>
             </div>
-    
             <div class="row mt-2">
                 <div class="col-12">
                     <img src="img/logo.png" class="logo mb-4" alt="Logo">
@@ -156,12 +209,10 @@
             </div>
         </div>
     </footer>
-    
-    
 
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
-</html>
+</html
